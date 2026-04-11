@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  --bg: #000;
+  --fg: #f4f4f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.05), transparent 42%),
+    linear-gradient(180deg, #050505 0%, #000 55%, #030303 100%);
+  color: var(--fg);
+}
+
+.stage {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.kinetic-canvas {
+  width: min(92vw, 1200px);
+  aspect-ratio: 1200 / 420;
+  display: block;
+  filter: drop-shadow(0 0 28px rgba(255, 255, 255, 0.06));
+}
+
+@media (max-width: 720px) {
+  .stage {
+    padding: 1.25rem;
+  }
+
+  .kinetic-canvas {
+    width: min(96vw, 1200px);
+  }
+}

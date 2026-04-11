@@ -1,0 +1,47 @@
+﻿# Ignore everything by default
+*
+
+# Keep git metadata files
+!.gitignore
+!README.md
+
+# Keep project context docs
+!docs/
+docs/*
+!docs/PROJECT_CONTEXT.md
+!docs/WORKSPACE_MAP.md
+!docs/README.md
+!docs/.gitkeep
+
+# Keep code
+!scripts/
+scripts/*
+!scripts/*.py
+!scripts/README.md
+!scripts/.gitkeep
+
+# Keep lightweight prototype code
+!prototype/
+prototype/*
+!prototype/kinetic-type/
+prototype/kinetic-type/*
+!prototype/kinetic-type/index.html
+!prototype/kinetic-type/styles.css
+!prototype/kinetic-type/script.js
+!prototype/.gitkeep
+!prototype/kinetic-type/.gitkeep
+
+# Keep skeleton folders only
+!assets/
+assets/*
+!assets/.gitkeep
+!assets/media/
+assets/media/*
+!assets/media/.gitkeep
+!assets/working/
+assets/working/*
+!assets/working/.gitkeep
+
+!archive/
+archive/*
+!archive/.gitkeep
