@@ -1,9 +1,13 @@
-﻿# Ignore everything by default
+# Ignore everything by default
 *
 
 # Keep git metadata files
 !.gitignore
 !README.md
+!index.html
+!styles.css
+!script.js
+!products.js
 
 # Keep project context docs
 !docs/
@@ -38,6 +42,16 @@ assets/*
 !assets/media/
 assets/media/*
 !assets/media/.gitkeep
+!assets/media/site-background.png
+!assets/media/site-logo.png
+!assets/catalog/
+assets/catalog/*
+!assets/catalog/ginger/
+assets/catalog/ginger/*
+!assets/catalog/ginger/*.png
+!assets/catalog/nurofen/
+assets/catalog/nurofen/*
+!assets/catalog/nurofen/*.png
 !assets/working/
 assets/working/*
 !assets/working/.gitkeep
