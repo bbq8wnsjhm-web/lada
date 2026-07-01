@@ -68,3 +68,8 @@ assets/working/*
 !archive/
 archive/*
 !archive/.gitkeep
+!assets/catalog/new/
+assets/catalog/new/*
+!assets/catalog/new/*.png
+!assets/catalog/new/*.jpg
+!assets/catalog/new/*.JPG

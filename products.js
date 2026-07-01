@@ -113,4 +113,61 @@ window.PRODUCTS = [
       "./assets/catalog/rings/rg-01-2.png"
     ],
     description: "Кольцо из коллекции Пилим: светлая форма с темным фактурным акцентом и переливающимися вставками. Описание, материал, размер и цену уточним перед публикацией."
-  }];
+  },
+  {
+    id: "nw-01",
+    name: "NW-01",
+    title: "Кафф Пилим",
+    category: "earrings",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/new/nw-01-1.png",
+    images: [
+      "./assets/catalog/new/nw-01-1.png",
+      "./assets/catalog/new/nw-gallery-1.jpg"
+    ],
+    description: "Кафф из коллекции Пилим: серебристая фактурная форма с острым органическим рельефом. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "nw-02",
+    name: "NW-02",
+    title: "Кафф Джинжер",
+    category: "earrings",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/new/nw-02-1.png",
+    images: [
+      "./assets/catalog/new/nw-02-1.png",
+      "./assets/catalog/new/nw-gallery-1.jpg"
+    ],
+    description: "Кафф из коллекции Джинжер: серебристая форма из объемных шариков. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "nw-03",
+    name: "NW-03",
+    title: "Кольцо Пилим",
+    category: "rings",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/new/nw-03-1.png",
+    images: [
+      "./assets/catalog/new/nw-03-1.png",
+      "./assets/catalog/new/nw-gallery-1.jpg"
+    ],
+    description: "Кольцо из коллекции Пилим: серебристая фактурная форма с неровным органическим рельефом. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "nw-04",
+    name: "NW-04",
+    title: "Кафф Пилим",
+    category: "earrings",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/new/nw-04-1.png",
+    images: [
+      "./assets/catalog/new/nw-04-1.png",
+      "./assets/catalog/new/nw-gallery-1.jpg"
+    ],
+    description: "Кафф из коллекции Пилим: серебристая фактурная форма с крупным органическим рельефом. Описание, материал, размер и цену уточним перед публикацией."
+  }
+];
