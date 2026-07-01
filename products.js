@@ -1,33 +1,5 @@
 window.PRODUCTS = [
   {
-    id: "nf-01",
-    name: "NF-01",
-    title: "Подвеска Нурофен",
-    category: "necklaces",
-    price: null,
-    status: "Цена по запросу",
-    image: "./assets/catalog/nurofen/nf-01-1.png",
-    images: [
-      "./assets/catalog/nurofen/nf-01-1.png",
-      "./assets/catalog/nurofen/nf-01-2.png"
-    ],
-    description: "Подвеска из коллекции Нурофен: серебристая блистерная форма на цепочке с красными вставками. Описание, материал, размер и цену уточним перед публикацией."
-  },
-  {
-    id: "nf-02",
-    name: "NF-02",
-    title: "Кольцо Нурофен",
-    category: "rings",
-    price: null,
-    status: "Цена по запросу",
-    image: "./assets/catalog/nurofen/nf-02-1.png",
-    images: [
-      "./assets/catalog/nurofen/nf-02-1.png",
-      "./assets/catalog/nurofen/nf-02-2.png"
-    ],
-    description: "Кольцо из коллекции Нурофен: открытая серебристая форма с красной капсулой. Описание, материал, размер и цену уточним перед публикацией."
-  },
-  {
     id: "gj-01",
     name: "GJ-01",
     title: "Кольцо Джинжер",
