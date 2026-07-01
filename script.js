@@ -8,6 +8,7 @@ const scrim = document.querySelector("[data-scrim]");
 const cartItems = document.querySelector("[data-cart-items]");
 const cartEmpty = document.querySelector("[data-cart-empty]");
 const cartCount = document.querySelector("[data-cart-count]");
+const openCartButton = document.querySelector("[data-open-cart]");
 const cartTotal = document.querySelector("[data-cart-total]");
 const copyStatus = document.querySelector("[data-copy-status]");
 
@@ -99,8 +100,10 @@ function removeFromCart(index) {
 }
 
 function renderCart() {
-  cartCount.textContent = String(cart.length);
-  cartCount.classList.toggle("has-items", cart.length > 0);
+  if (cartCount) {
+    cartCount.textContent = String(cart.length);
+    cartCount.classList.toggle("has-items", cart.length > 0);
+  }
   cartEmpty.hidden = cart.length > 0;
   cartItems.innerHTML = cart.map((product, index) => `
     <div class="cart-item">
@@ -204,7 +207,7 @@ cartItems.addEventListener("click", (event) => {
   if (button) removeFromCart(Number(button.dataset.removeCart));
 });
 
-document.querySelector("[data-open-cart]").addEventListener("click", openCart);
+if (openCartButton) openCartButton.addEventListener("click", openCart);
 document.querySelector("[data-close-cart]").addEventListener("click", () => closeCart());
 document.querySelector("[data-open-info]").addEventListener("click", openInfo);
 document.querySelector("[data-close-info]").addEventListener("click", () => closeInfo());
