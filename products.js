@@ -70,5 +70,47 @@ window.PRODUCTS = [
       "./assets/catalog/ginger/gj-05-2.png"
     ],
     description: "Кольцо из коллекции Джинжер: серебристая фактурная шинка со светлой овальной вставкой. Описание, материал, размер и цену уточним перед публикацией."
-  }
-];
+  },
+  {
+    id: "pl-01",
+    name: "PL-01",
+    title: "Украшение Пилим",
+    category: "objects",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/pilim/pl-01-1.png",
+    images: [
+      "./assets/catalog/pilim/pl-01-1.png",
+      "./assets/catalog/pilim/pl-01-2.png",
+      "./assets/catalog/pilim/pl-01-3.png"
+    ],
+    description: "Украшение из коллекции Пилим: серебристая фактурная форма на перчатке. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "er-01",
+    name: "ER-01",
+    title: "Кафф Пилим",
+    category: "earrings",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/earrings/er-01-2.png",
+    images: [
+      "./assets/catalog/earrings/er-01-1.png",
+      "./assets/catalog/earrings/er-01-2.png"
+    ],
+    description: "Кафф из коллекции Пилим: серебристая фактурная форма для уха. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "rg-01",
+    name: "RG-01",
+    title: "Кольцо Пилим",
+    category: "rings",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/rings/rg-01-1.png",
+    images: [
+      "./assets/catalog/rings/rg-01-1.png",
+      "./assets/catalog/rings/rg-01-2.png"
+    ],
+    description: "Кольцо из коллекции Пилим: светлая форма с темным фактурным акцентом и переливающимися вставками. Описание, материал, размер и цену уточним перед публикацией."
+  }];
