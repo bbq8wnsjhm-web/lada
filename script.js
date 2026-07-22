@@ -19,11 +19,18 @@ let cart = [];
 
 const formatPrice = (value) => value == null ? "Цена по запросу" : new Intl.NumberFormat("ru-RU").format(value) + " ₽";
 const getProductImages = (product) => product.images && product.images.length ? product.images : [product.image];
+const getProductCollection = (product) => {
+  if (product.collection) return product.collection;
+  const marker = [product.id, product.image, product.title, product.description].join(" ").toLowerCase();
+  if (marker.includes("nurofen") || marker.includes("nf-") || marker.includes("нурофен")) return "nurofen";
+  if (marker.includes("ginger") || marker.includes("gj-") || marker.includes("джинджер")) return "ginger";
+  return "jewelry";
+};
 
 function renderProducts() {
   const visibleProducts = activeFilter === "all"
     ? products
-    : products.filter((product) => product.category === activeFilter);
+    : products.filter((product) => getProductCollection(product) === activeFilter);
 
   grid.innerHTML = visibleProducts.map((product) => `
     <button class="product-card" type="button" data-product-id="${product.id}">

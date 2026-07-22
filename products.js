@@ -169,5 +169,35 @@ window.PRODUCTS = [
       "./assets/catalog/new/nw-gallery-1.jpg"
     ],
     description: "Кафф из коллекции Пилим: серебристая фактурная форма с крупным органическим рельефом. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "nf-01",
+    name: "NF-01",
+    title: "Украшение Нурофен",
+    category: "objects",
+    collection: "nurofen",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/nurofen/nf-01-1.png",
+    images: [
+      "./assets/catalog/nurofen/nf-01-1.png",
+      "./assets/catalog/nurofen/nf-01-2.png"
+    ],
+    description: "Украшение из коллекции Нурофен: серебристая фактурная форма. Описание, материал, размер и цену уточним перед публикацией."
+  },
+  {
+    id: "nf-02",
+    name: "NF-02",
+    title: "Украшение Нурофен",
+    category: "objects",
+    collection: "nurofen",
+    price: null,
+    status: "Цена по запросу",
+    image: "./assets/catalog/nurofen/nf-02-1.png",
+    images: [
+      "./assets/catalog/nurofen/nf-02-1.png",
+      "./assets/catalog/nurofen/nf-02-2.png"
+    ],
+    description: "Украшение из коллекции Нурофен: серебристая фактурная форма. Описание, материал, размер и цену уточним перед публикацией."
   }
 ];
