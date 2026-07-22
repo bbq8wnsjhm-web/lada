@@ -8,95 +8,112 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: #fff; }
 a { color: inherit; text-decoration: none; }
 
-.home-hero {
-  position: relative;
-  display: grid;
-  min-height: calc(100svh - 82px);
-  padding: 28px clamp(20px, 4vw, 70px);
-  overflow: hidden;
-  background: url("./assets/media/home-background.png") center / cover no-repeat;
-}
-
-.home-hero::before {
-  position: absolute;
-  inset: 0;
-  content: "";
-  background: rgba(0, 0, 0, 0.08);
-}
-
-.home-header,
-.home-intro {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  mix-blend-mode: difference;
+.home-shell {
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  background: #fff;
 }
 
 .home-header {
   display: flex;
+  min-height: 108px;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  font-size: 16px;
+  gap: 30px;
+  padding: 24px clamp(22px, 4vw, 70px);
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.home-brand {
+  font-size: 29px;
   font-weight: 900;
+  line-height: 1;
 }
 
-.home-brand { font-size: 24px; }
-
-.home-catalog {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 14px 9px;
-  border: 1px solid currentColor;
-}
-
-.home-intro {
-  align-self: end;
-  margin-bottom: 32px;
-  text-transform: uppercase;
-}
-
-.home-intro p {
-  margin: 0 0 10px;
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.home-intro h1 {
-  margin: 0;
-  font-size: 120px;
-  line-height: 0.82;
-  font-weight: 900;
-}
-
-.home-next {
+.home-nav {
   display: flex;
-  min-height: 82px;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px 44px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.home-nav a,
+.collection-link {
+  border-bottom: 1px solid transparent;
+}
+
+.home-nav a:hover,
+.home-nav a:focus-visible,
+.collection-link:hover,
+.collection-link:focus-visible {
+  border-bottom-color: currentColor;
+}
+
+.collection-stage {
+  position: relative;
+  overflow: hidden;
   background: #fff;
 }
 
-.home-next a {
-  display: inline-flex;
-  gap: 16px;
-  align-items: center;
-  padding-bottom: 4px;
-  border-bottom: 2px solid #000;
-  font-size: 18px;
-  font-weight: 900;
+.collection-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -13.45%;
 }
 
+.collection-link {
+  position: absolute;
+  z-index: 1;
+  padding-bottom: 2px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.collection-link--ginger {
+  top: 1.5%;
+  left: 43%;
+  color: #fff;
+}
+
+.collection-link--jewellery {
+  top: 1.5%;
+  right: 4%;
+}
+
+.collection-link--nurofen {
+  top: 50%;
+  left: 56%;
+}
+
+.home-information {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #e6e6e6;
+}
+
+.home-information article {
+  min-height: 190px;
+  padding: 28px clamp(22px, 4vw, 70px);
+}
+
+.home-information article + article { border-left: 1px solid #e6e6e6; }
+.home-information h2 { margin: 0 0 30px; font-size: 18px; font-weight: 900; text-transform: uppercase; }
+.home-information p { max-width: 360px; margin: 0; font-size: 16px; line-height: 1.35; }
+
 @media (max-width: 760px) {
-  .home-hero { min-height: calc(100svh - 68px); padding: 20px 18px; }
-  .home-header { font-size: 13px; }
-  .home-brand { font-size: 19px; }
-  .home-catalog { gap: 8px; padding: 8px 10px 7px; }
-  .home-intro { margin-bottom: 16px; }
-  .home-intro p { margin-bottom: 8px; font-size: 13px; }
-  .home-intro h1 { font-size: 62px; }
-  .home-next { min-height: 68px; }
-  .home-next a { gap: 10px; font-size: 14px; }
+  .home-header { min-height: 74px; align-items: flex-start; gap: 20px; padding: 18px; }
+  .home-brand { max-width: 146px; font-size: 20px; line-height: 0.94; }
+  .home-nav { width: 136px; gap: 10px 14px; font-size: 12px; line-height: 1.1; }
+  .collection-link { font-size: 15px; }
+  .collection-link--ginger { top: 1.7%; left: 42%; }
+  .collection-link--jewellery { top: 1.7%; right: 3%; }
+  .collection-link--nurofen { top: 49%; left: 55%; }
+  .home-information { grid-template-columns: 1fr; }
+  .home-information article { min-height: 0; padding: 24px 18px 28px; }
+  .home-information article + article { border-top: 1px solid #e6e6e6; border-left: 0; }
+  .home-information h2 { margin-bottom: 16px; font-size: 15px; }
+  .home-information p { font-size: 14px; }
 }

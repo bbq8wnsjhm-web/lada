@@ -3,23 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ЛАДА</title>
+    <title>kruzhilinajewellery</title>
     <link rel="stylesheet" href="./home.css" />
   </head>
   <body class="home-page">
-    <main>
-      <section class="home-hero" aria-labelledby="home-title">
-        <header class="home-header">
-          <a class="home-brand" href="./index.html" aria-label="ЛАДА">ЛАДА</a>
-          <a class="home-catalog" href="./catalog.html">КАТАЛОГ <span aria-hidden="true">→</span></a>
-        </header>
-        <div class="home-intro">
-          <p>УКРАШЕНИЯ</p>
-          <h1 id="home-title">ЛАДА</h1>
-        </div>
+    <main class="home-shell">
+      <header class="home-header">
+        <a class="home-brand" href="./index.html" aria-label="Главная">kruzhilinajewellery</a>
+        <nav class="home-nav" aria-label="Навигация">
+          <a href="#about">о бренде</a>
+          <a href="#delivery">доставка</a>
+          <a href="./catalog.html?cart=1">корзина</a>
+        </nav>
+      </header>
+
+      <section class="collection-stage" id="collections" aria-label="Коллекции">
+        <img class="collection-art" src="./assets/media/home-background.png" alt="Украшения из коллекций Джинджер, Джулери и Нурофен" />
+        <a class="collection-link collection-link--ginger" href="./catalog.html?collection=ginger">джинджер</a>
+        <a class="collection-link collection-link--jewellery" href="./catalog.html?collection=jewelry">джулери</a>
+        <a class="collection-link collection-link--nurofen" href="./catalog.html?collection=nurofen">нурофен</a>
       </section>
-      <section class="home-next" aria-label="Переход в каталог">
-        <a href="./catalog.html">СМОТРЕТЬ КАТАЛОГ <span aria-hidden="true">→</span></a>
+
+      <section class="home-information" aria-label="Информация">
+        <article id="about">
+          <h2>О бренде</h2>
+          <p>Украшения и объекты, собранные в коллекции Джулери, Джинджер и Нурофен.</p>
+        </article>
+        <article id="delivery">
+          <h2>Доставка</h2>
+          <p>Условия и сроки доставки уточняются при оформлении заявки на выбранные украшения.</p>
+        </article>
       </section>
     </main>
   </body>

@@ -1,4 +1,4 @@
-﻿const products = window.PRODUCTS || [];
+const products = window.PRODUCTS || [];
 const grid = document.querySelector("[data-product-grid]");
 const dialog = document.querySelector("[data-product-dialog]");
 const detail = document.querySelector("[data-product-detail]");
@@ -12,7 +12,9 @@ const openCartButton = document.querySelector("[data-open-cart]");
 const cartTotal = document.querySelector("[data-cart-total]");
 const copyStatus = document.querySelector("[data-copy-status]");
 
-let activeFilter = "all";
+const searchParameters = new URLSearchParams(window.location.search);
+const requestedCollection = searchParameters.get("collection");
+let activeFilter = ["jewelry", "nurofen", "ginger"].includes(requestedCollection) ? requestedCollection : "all";
 let activeProduct = null;
 let galleryIndex = 0;
 let cart = [];
