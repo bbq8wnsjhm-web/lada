@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Каталог - ЛАДА</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="Коллекции каталога">
+      <button class="plain-icon" type="button" data-open-info aria-label="Информация">+</button>
+      <div class="collection-menu">
+        <h1>КОЛЛЕКЦИЯ //</h1>
+        <nav class="category-nav" aria-label="Коллекции">
+          <button class="category-link is-active" type="button" data-filter="all">Все</button>
+          <button class="category-link" type="button" data-filter="jewelry">Джулери</button>
+          <button class="category-link" type="button" data-filter="nurofen">Нурофен</button>
+          <button class="category-link" type="button" data-filter="ginger">Джинджер</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="catalog-section" id="catalog" aria-label="Каталог">
+        <div class="product-grid" data-product-grid></div>
+      </section>
+    </main>
+
+    <dialog class="product-dialog" data-product-dialog>
+      <button class="plain-icon dialog-close" type="button" data-close-product aria-label="Закрыть">×</button>
+      <div class="product-detail" data-product-detail></div>
+    </dialog>
+
+    <aside class="info-panel" data-info-panel aria-hidden="true">
+      <div class="panel-head">
+        <h2>JEWELRY</h2>
+        <button class="plain-icon" type="button" data-close-info aria-label="Закрыть">×</button>
+      </div>
+      <p>Шаблон каталога без оплаты. Карточки товаров будут добавляться по мере готовности фото, описаний, размеров и цен.</p>
+      <p>Заявка копируется текстом, чтобы ее можно было отправить в Telegram или WhatsApp.</p>
+    </aside>
+
+    <aside class="cart-panel" data-cart-panel aria-hidden="true">
+      <div class="panel-head">
+        <h2>Заявка</h2>
+        <button class="plain-icon" type="button" data-close-cart aria-label="Закрыть">×</button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-empty" data-cart-empty>Пока ничего не выбрано.</div>
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Итого</span>
+          <strong data-cart-total>Цена по запросу</strong>
+        </div>
+        <button class="primary-button" type="button" data-copy-order>Скопировать заявку</button>
+        <p class="cart-note" data-copy-status>После копирования заявку можно отправить в Telegram или WhatsApp.</p>
+      </div>
+    </aside>
+    <img class="corner-logo" src="./assets/media/site-logo.png" alt="" aria-hidden="true">
+    <div class="scrim" data-scrim></div>
+
+    <script src="./products.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+

@@ -73,3 +73,7 @@ assets/catalog/new/*
 !assets/catalog/new/*.png
 !assets/catalog/new/*.jpg
 !assets/catalog/new/*.JPG
+
+!catalog.html
+!home.css
+!assets/media/home-background.png

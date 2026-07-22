@@ -1,0 +1,102 @@
+:root {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; }
+a { color: inherit; text-decoration: none; }
+
+.home-hero {
+  position: relative;
+  display: grid;
+  min-height: calc(100svh - 82px);
+  padding: 28px clamp(20px, 4vw, 70px);
+  overflow: hidden;
+  background: url("./assets/media/home-background.png") center / cover no-repeat;
+}
+
+.home-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.home-header,
+.home-intro {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.home-brand { font-size: 24px; }
+
+.home-catalog {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px 9px;
+  border: 1px solid currentColor;
+}
+
+.home-intro {
+  align-self: end;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.home-intro p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.home-intro h1 {
+  margin: 0;
+  font-size: 120px;
+  line-height: 0.82;
+  font-weight: 900;
+}
+
+.home-next {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.home-next a {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #000;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+@media (max-width: 760px) {
+  .home-hero { min-height: calc(100svh - 68px); padding: 20px 18px; }
+  .home-header { font-size: 13px; }
+  .home-brand { font-size: 19px; }
+  .home-catalog { gap: 8px; padding: 8px 10px 7px; }
+  .home-intro { margin-bottom: 16px; }
+  .home-intro p { margin-bottom: 8px; font-size: 13px; }
+  .home-intro h1 { font-size: 62px; }
+  .home-next { min-height: 68px; }
+  .home-next a { gap: 10px; font-size: 14px; }
+}
