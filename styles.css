@@ -12,9 +12,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background:
-    url("./assets/media/site-background.png") left top / cover no-repeat fixed,
-    var(--bg);
+  background: #fff;
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0;
